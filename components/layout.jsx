@@ -4,8 +4,11 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
+export const siteTitle = "Yerin Kirill's personal blog";
+
+const ogImageURL =
+  "https://scontent.fiev25-2.fna.fbcdn.net/v/t1.6435-9/117378699_609165919985927_8180354329180815559_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=-LlSnuN046AAX-Z-xkg&_nc_ht=scontent.fiev25-2.fna&oh=00_AT-78TC7cyZZONXe6_r5lPpynk7OJYyY0CYgRsimBecB8w&oe=629BA803";
 const name = "Kirill Yerin";
-export const siteTitle = "Next.js Sample Website";
 
 export default function Layout({ children, home }) {
   return (
@@ -14,14 +17,9 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Yerin Kirill's personal blog with the most interesting articles about his life"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta property="og:image" content={ogImageURL} />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
