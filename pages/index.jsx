@@ -18,6 +18,13 @@ export default function Home({ allPostsData }) {
           <a href="https://www.facebook.com/kirill.yerin" target="_blank">
             Facebook
           </a>
+          <p>
+            Read my{" "}
+            <span className={utilStyles.lineThrough}>
+              the best in the world
+            </span>{" "}
+            the most top rated personal blog articles and become better with me
+          </p>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
